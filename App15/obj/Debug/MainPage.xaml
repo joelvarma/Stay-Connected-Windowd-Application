@@ -1,0 +1,82 @@
+﻿<Page
+    x:Class="App15.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App15"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Storyboard x:Name="one">
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="tit1">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="-88.2"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="41.859"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="tit1">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="-4.477"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-13.477"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="usrtxt">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="-10.522"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-4.477"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="usrtxt">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="394.03"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-3.108"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="button">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="-561"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-3"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="button">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="-15"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-36"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="button1">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="489"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-12"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="button1">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="-21"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-33"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimation Duration="0" To="-6" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="pwdlogin" d:IsOptimized="True"/>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="pwdlogin">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="270"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-21"/>
+    		</DoubleAnimationUsingKeyFrames>
+    	</Storyboard>
+    </Page.Resources>
+
+    <Grid Background="#FF6AC0F1">
+
+        <TextBlock x:Name="tit1" HorizontalAlignment="Left" Margin="564,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="432" Height="88" FontSize="50" Text="Stay connected" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox x:Name="usrtxt" HorizontalAlignment="Left" Margin="564,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="313" FontSize="30" PlaceholderText="User Name" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <CompositeTransform/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:ConnectionId='1' x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="561,573,0,0" VerticalAlignment="Top" Height="53" Width="143" FontSize="25" RenderTransformOrigin="0.5,0.5"                      >
+            <Button.RenderTransform>
+                <CompositeTransform/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:ConnectionId='2' x:Name="button1" Content="Logup" HorizontalAlignment="Left" Margin="729,573,0,0" VerticalAlignment="Top" Height="53" Width="146" FontSize="25" RenderTransformOrigin="0.5,0.5"                      >
+            <Button.RenderTransform>
+                <CompositeTransform/>
+            </Button.RenderTransform>
+        </Button>
+        <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="pwdlogin" HorizontalAlignment="Left" Margin="564,420,0,0" VerticalAlignment="Top" Height="59" Width="308" PlaceholderText="Password" RenderTransformOrigin="0.5,0.5" FontSize="30">
+        	<PasswordBox.RenderTransform>
+        		<CompositeTransform/>
+        	</PasswordBox.RenderTransform>
+        </PasswordBox>
+
+    </Grid>
+</Page>
+

@@ -1,0 +1,48 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App15"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Bing.Maps"
+    x:Class="App15.BlankPage2"
+    mc:Ignorable="d">
+
+    <Grid >
+
+        <Maps:Map x:Name="map1" Culture="en-US" HomeRegion="US" Credentials="AnXRTBU4FnK78RaIY6IP4PEVDx1TYPiIZBLlxiNw7UNX9h4RtNtYC3leHhZ-pXPT" HorizontalAlignment="Left" VerticalAlignment="Top" Height="768" Width="1376" Margin="-10,-10,0,0">
+            <Maps:Pushpin x:Name="pp1" Foreground="Aqua" Background="DarkGoldenrod"/>
+
+
+
+        </Maps:Map>
+
+        <Rectangle x:Name="rect1" Fill="#FFE8E8E8" HorizontalAlignment="Left" Height="667" Margin="474,39,0,0" Stroke="Black" VerticalAlignment="Top" Width="529"/>
+        <TextBlock x:Name="addfrnd" HorizontalAlignment="Left" Margin="589,90,0,0" TextWrapping="Wrap" Text="Select a friend" VerticalAlignment="Top" Height="103" Width="306" FontSize="45" Foreground="#FF898585"/>
+
+        <TextBox x:Name="useremailtxt" HorizontalAlignment="Left" Margin="556,544,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="366" Height="39" InputScope="EmailSmtpAddress" PlaceholderText="Friends Email here" FontSize="20"/>
+        <Button x:Name="go_Copy" Content="Add friend" HorizontalAlignment="Left" Margin="702,615,0,0" VerticalAlignment="Top" Width="116" Foreground="#FF898585" BorderBrush="#FF898585" Height="45" Click="gocopy_onclicked" RenderTransformOrigin="0.62,0.533"/>
+        <ScrollViewer x:Name="sv" HorizontalAlignment="Left" Height="349" Margin="556,165,0,0" VerticalAlignment="Top" Width="366" Background="#FF898585" Foreground="#FFF17272">
+            <StackPanel  x:Name="sp">
+                <!--<ListView x:Name="usernames" SelectionChanged="username_SelectionChanged" Height="350" Foreground="#FF898585">
+                    <x:String></x:String>
+                </ListView>-->
+            </StackPanel>
+            
+
+        </ScrollViewer>
+        <ProgressRing x:Name="pr" HorizontalAlignment="Left" Margin="682,357,0,0" VerticalAlignment="Top" Height="62" Width="71" IsActive="True" Foreground="White"/>
+        <AppBarButton HorizontalAlignment="Left" Icon="Back" Label="Exit" Margin="45,14,0,0" VerticalAlignment="Top" Foreground="#FFE8E8E8" Click="back_c"/>
+        <AppBarButton x:Name="cl" HorizontalAlignment="Left" Icon="Clear" Label="Close" Margin="916,47,0,0" VerticalAlignment="Top" Height="76" Width="87" FontSize="23" Click="lc_c"/>
+    </Grid>
+    <Page.TopAppBar>
+        <AppBar Background="#FF898585" BorderBrush="#FFE8E8E8">
+            <StackPanel Orientation="Horizontal">
+                <AppBarButton x:Name="see" Icon="AddFriend" Label="Look who's around" FontSize="23" Foreground="#FFE8E8E8" Click="vi_c" FontWeight="Bold" FontFamily="Verdana" />
+                <AppBarButton Icon="Globe" Label="Track" FontSize="23" Foreground="#FFE8E8E8" Click="everyone_c"/>
+                <AppBarButton x:Name="update" Icon="Home" Label="Update Current Location" FontSize="23" Foreground="#FFE8E8E8" Click="u_c"/>
+                <AppBarButton Icon="Help" Label="About" FontSize="23" Foreground="#FFE8E8E8" Click="h_c"/>
+                </StackPanel>
+        </AppBar>
+    </Page.TopAppBar>
+</Page>

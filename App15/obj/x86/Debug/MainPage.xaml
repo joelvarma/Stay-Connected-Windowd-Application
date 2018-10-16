@@ -1,0 +1,82 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App15"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Bing.Maps"
+    x:Class="App15.MainPage"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Storyboard x:Name="one">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="tit1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="53.859"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-22.141"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="tit1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="18.523"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="16.523"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="usrtxt">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-2.522"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-0.477"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="usrtxt">
+                <EasingDoubleKeyFrame KeyTime="0" Value="58.03"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-21.108"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="button">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-561"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-3"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="button">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-15"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-36"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="0" To="-16" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="pwdlogin" d:IsOptimized="True"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="pwdlogin">
+                <EasingDoubleKeyFrame KeyTime="0" Value="58"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-21"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+
+    <Grid Background="#FFE8E8E8">
+
+        <TextBlock x:Name="tit1" HorizontalAlignment="Left" Margin="79,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="606" Height="110" FontSize="90" Text="Stayconnected" RenderTransformOrigin="0.5,0.5" Foreground="#FF898585">
+            <TextBlock.RenderTransform>
+                <CompositeTransform/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox x:Name="usrtxt" HorizontalAlignment="Left" Margin="690,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="244" FontSize="17" PlaceholderText="Email Id" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <CompositeTransform/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:ConnectionId='1' x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="1237,73,0,0" VerticalAlignment="Top" Height="50" Width="80" FontSize="17" RenderTransformOrigin="0.5,0.5"                       Background="#FF898585" Foreground="#FFF3F3F3" BorderBrush="#FFE8E8E8">
+            <Button.RenderTransform>
+                <CompositeTransform/>
+            </Button.RenderTransform>
+        </Button>
+        <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="pwdlogin" HorizontalAlignment="Left" Margin="976,76,0,0" VerticalAlignment="Top" Height="41" Width="232" PlaceholderText="Password" RenderTransformOrigin="0.5,0.5" FontSize="17">
+            <PasswordBox.RenderTransform>
+                <CompositeTransform/>
+            </PasswordBox.RenderTransform>
+        </PasswordBox>
+        <Rectangle Fill="#FF898585" Height="537" Margin="79,176,507,0" Stroke="#FFE8E8E8" VerticalAlignment="Top"/>
+        <TextBox x:Name="usrnametext" HorizontalAlignment="Left" Margin="916,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="358" PlaceholderText="Username" FontSize="23"/>
+        <PasswordBox x:Name="pwdlogup" HorizontalAlignment="Left" Margin="916,388,0,0" VerticalAlignment="Top" Height="50" Width="358" FontSize="23" PlaceholderText="Password" RenderTransformOrigin="0.503,0.58"/>
+        <Button x:ConnectionId='2' x:Name="logupb" Content="Log On" HorizontalAlignment="Left" Margin="913,580,0,0" VerticalAlignment="Top" Width="364" Height="61" FontSize="25" BorderBrush="#FF898585" Foreground="#FFFDFDFD" Background="#FF898585"                       />
+        <TextBlock HorizontalAlignment="Left" Margin="301,394,0,0" TextWrapping="Wrap" Text="Busy professional lives , step in to change them  into blissful ones" VerticalAlignment="Top" Height="78" Width="474" Foreground="White" FontSize="27"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="198,231,0,0" VerticalAlignment="Top" Width="544" Source="Assets/logo-connect-white.png"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="916,473,0,0" VerticalAlignment="Top" Height="47" Width="358" PlaceholderText="Confirm Password" FontSize="23"/>
+        <TextBox x:Name="emailtxt" HorizontalAlignment="Left" Margin="916,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="358" FontSize="23" PlaceholderText="Email id"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="35" Margin="231,403,0,0" Stroke="#FFF9F4F4" VerticalAlignment="Top" Width="31"/>
+        <Rectangle x:Name="rect" Fill="#FF898585" HorizontalAlignment="Left" Stroke="Black" Width="1366"/>
+        <TextBlock x:Name="head" HorizontalAlignment="Left" Margin="496,361,0,0" TextWrapping="Wrap" Text="Loading details..Please Wait" VerticalAlignment="Top" Height="158" Width="552" FontSize="30"/>
+        <ProgressRing x:Name="prhome" HorizontalAlignment="Left" Margin="624,472,0,0" VerticalAlignment="Top" Height="84" Width="91" Foreground="#FFE8E8E8" IsActive="True"/>
+
+    </Grid>
+</Page>
+

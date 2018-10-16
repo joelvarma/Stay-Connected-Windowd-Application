@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JOELRAJVARMA</Machine>
+    <WindowsUser>DELL PC</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>db446133-088a-4945-a5d0-f432fa1be0dc</PackageIdentityName>
+    <IntermediateOutputPath>c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>048102E168F6F6EC46C6BA32DD6463677882653E1D42469FB1552162A63D13D5</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>db446133-088a-4945-a5d0-f432fa1be0dc_1.0.0.0_neutral__bz3ps7w1bdjzg</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>db446133-088a-4945-a5d0-f432fa1be0dc_bz3ps7w1bdjzg!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>db446133-088a-4945-a5d0-f432fa1be0dc</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=DELL PC</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-11T11:09:54.138</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\bin\Debug\App15.exe">
+      <PackagePath>App15.exe</PackagePath>
+      <Modified>2015-01-11T11:13:32.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T00:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T00:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T00:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T00:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-01-11T09:47:37.265</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\bin\Debug\BlankPage1.xbf">
+      <PackagePath>BlankPage1.xbf</PackagePath>
+      <Modified>2015-01-11T11:09:52.116</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\bin\Debug\BlankPage2.xbf">
+      <PackagePath>BlankPage2.xbf</PackagePath>
+      <Modified>2015-01-11T11:09:52.117</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-01-11T11:09:52.119</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\bin\Debug\App15.xr.xml">
+      <PackagePath>App15.xr.xml</PackagePath>
+      <Modified>2015-01-11T11:09:51.955</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\dell pc\documents\visual studio 2013\Projects\App15\App15\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-01-11T11:09:53.586</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
