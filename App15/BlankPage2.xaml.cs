@@ -499,12 +499,12 @@ namespace App15
                 dis[i++] = ddistance;
 
                 
-                //double theta = p.Y - 78.4760;
-               // dist = Math.Sin(deg2rad(p.X)) * Math.Sin(deg2rad(17.3660)) + Math.Cos(deg2rad(p.X)) * Math.Cos(deg2rad(17.3660)) * Math.Cos(deg2rad(theta));
-                //dist = Math.Acos(dist);
-                //dist = RadianToDegree(dist);
-                //dist = dist * 60 * 1.1515;
-                //dist = dist * 1.609344;
+                double theta = p.Y - 78.4760;
+                dist = Math.Sin(deg2rad(p.X)) * Math.Sin(deg2rad(17.3660)) + Math.Cos(deg2rad(p.X)) * Math.Cos(deg2rad(17.3660)) * Math.Cos(deg2rad(theta));
+                dist = Math.Acos(dist);
+                dist = RadianToDegree(dist);
+                dist = dist * 60 * 1.1515;
+                dist = dist * 1.609344;
 
 
 
